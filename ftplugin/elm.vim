@@ -63,7 +63,7 @@ let b:undo_ftplugin = "
       \"
 
 if get(g:, 'elm_setup_keybindings', 1)
-  nmap <buffer> <LocalLeader>m <Plug>(elm-make)
+  nmap <buffer> <LocalLeader>m <Plug>(elm make)
   nmap <buffer> <LocalLeader>b <Plug>(elm-make-main)
   nmap <buffer> <LocalLeader>t <Plug>(elm-test)
   nmap <buffer> <LocalLeader>r <Plug>(elm-repl)
