@@ -212,7 +212,7 @@ endf
 
 " Make the given file, or the current file if none is given.
 function! elm#Make(...) abort
-	if elm#util#CheckBin('elm-make', 'http://elm-lang.org/install') ==# ''
+	if elm#util#CheckBin('elm make', 'http://elm-lang.org/install') ==# ''
 		return
 	endif
 
