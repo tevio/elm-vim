@@ -11,7 +11,7 @@ fun! elm#util#IsWin() abort
 endf
 
 fun! elm#util#CheckBin(bin, url) abort
-  let l:binpath = substitute(a:bin, '^\s*\(.\{[\s-]}\)\s*$', '\1', '')
+  let l:binpath = substitute(a:bin, '^\s*\(.\{[ -]}\)\s*$', '\1', '')
 
   if executable(l:binpath)
     return l:binpath
