@@ -212,11 +212,11 @@ endf
 
 " Make the given file, or the current file if none is given.
 function! elm#Make(...) abort
-	if elm#util#CheckBin('elm make', 'http://elm-lang.org/install') ==# ''
+	if elm#util#CheckBin('elm-make', 'http://elm-lang.org/install') ==# ''
 		return
 	endif
 
-	call elm#util#Echo('elm make:', 'building...')
+	call elm#util#Echo('elm-make:', 'building...')
 
 	let l:input = (a:0 == 0) ? expand('%:p') : a:1
 	let l:fixes = elm#Build(l:input, g:elm_make_output_file, g:elm_make_show_warnings)
